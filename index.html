@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária Achei Meu Lote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Imobiliária Achei Meu Lote</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#listings">Imóveis</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Encontre seu imóvel</h2>
+        <form id="search-form">
+            <label for="location">Localização:</label>
+            <input type="text" id="location" name="location" placeholder="Cidade, Bairro">
+            
+            <label for="type">Tipo de Imóvel:</label>
+            <select id="type" name="type">
+                <option value="todos">Todos</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="terreno">Terreno</option>
+            </select>
+            
+            <label for="rooms">Quartos:</label>
+            <select id="rooms" name="rooms">
+                <option value="1">1 quarto</option>
+                <option value="2">2 quartos</option>
+                <option value="3">3 quartos</option>
+                <option value="4">4 ou mais quartos</option>
+            </select>
+            
+            <button type="submit">Pesquisar</button>
+        </form>
+    </section>
+
+    <section id="listings">
+        <h2>Imóveis em Destaque</h2>
+        <div class="listing">
+            <img src="imovel1.jpg" alt="Imóvel 1">
+            <h3>Casa em Bairro X</h3>
+            <p>Descrição do imóvel.</p>
+        </div>
+        <div class="listing">
+            <img src="imovel2.jpg" alt="Imóvel 2">
+            <h3>Apartamento em Bairro Y</h3>
+            <p>Descrição do imóvel.</p>
+        </div>
+        <!-- Adicione mais imóveis conforme necessário -->
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Imobiliária Achei Meu Lote. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
